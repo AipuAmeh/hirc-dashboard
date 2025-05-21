@@ -1,0 +1,13 @@
+object_id,INTAKE_SUBMIT_DATE,PHASE,FUND_CATG,SHORT_TITLE,PI_NAME,PI_TYPE,PM_NAME_1,PROJ_TYPE,RSCH_THEME,RSCH_CATG,RSCH_TYPE
+WUTZ,2023-09-25,End,Contract - Other,teat,"Alsaied, Tarek",HI Faculty,"Vaughn, Devan",Prospective,Adult Congenital Heart Disease,Cardiac & Vascular Disorders,Clinical
+WUTZ1,2024-04-12,End,HI Divisional Funds  Other,123,"Wu, Danny T.Y.",HI Faculty,"Ramesh, Aniruddhan",Retrospective,Cannabinoids / Endocannabinoids,Cardiac & Vascular Disorders,Health Service Delivery
+WUTZ2,,Plan,,,,,,,,,
+WUTZ3,2023-05-11,Collect,Contract - Industry|Contract - Other,teat,"Zhang, Ting",HI Faculty,"Ramesh, Aniruddhan",Prospective,Atopic Dermatitis,Allergic / Immunology,Clinical
+WUTZ4,2024-08-31,Initiate,Contract - Industry|Contract - Other,test,"Zhang, Ting",HI Faculty,"Ramesh, Aniruddhan",Prospective,Eating Disorder Treatment & Body Satisfaction PGM,Adolescent Medicine,Basic Research
+WUTZ5,2024-10-14,Initiate,Contract - Industry|Contract - Other,test pi,"Zhang, Ting",HI Faculty,"Wu, Tzu-Yu",Prospective,Acquired Heart Disease,Cardiac & Vascular Disorders,Clinical
+WUTZ8,2024-03-20,Plan,,,,,,,,Cardiac & Vascular Disorders,
+WUTZ9,2024-12-03,Initiate,Contract - Other|HI Divisional Funds  Other,test,"Zhang, Ting",HI Faculty,"Zhang, Ting",Biorepository,Acquired Heart Disease,Cardiac & Vascular Disorders,Basic Research
+WUTZA,2025-05-09,Initiate,Contract - Industry,test,"Zhang, Ting",HI Faculty,"Wu, Danny T.Y.",Prospective,Acquired Heart Disease,Cardiac & Vascular Disorders,Basic Research
+WUTZB,2024-01-01,Collect,HI Divisional Funds  Faculty Business Plan|HI Divisional Funds  Other,test,"Zhang, Ting",HI Faculty,"Zhang, Ting",Prospective,Endocrine Disruption / Disruptors,Adolescent Medicine,Basic Research
+WUTZC,2025-02-27,Collect,Contract - Other|HI Divisional Funds  Other,test,"Zhang, Ting",HI Faculty,"Wu, Danny T.Y.",Biorepository|Prospective,Eating Disorder Treatment & Body Satisfaction PGM,Adolescent Medicine,Basic Research
+WUTZD,2024-12-19,Initiate,Contract - Industry,test,"Zhang, Ting",HI Faculty,"Zhang, Ting",Prospective,Acquired Heart Disease,Cardiac & Vascular Disorders,Basic Research
