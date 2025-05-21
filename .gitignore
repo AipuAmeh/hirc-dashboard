@@ -3,3 +3,7 @@
 *.sqlite
 *.sqlite3
 *.db
+*.sqbpro
+
+__pycache__/
+*.pyc
