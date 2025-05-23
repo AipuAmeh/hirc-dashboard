@@ -1,26 +1,41 @@
 import { StrictMode } from 'react'
+import { ChakraProvider } from "@chakra-ui/react";
 import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  createRoutesFromElements,
 } from "react-router-dom"
-import './index.css'
 
 import App from './App.jsx'
 import Dashboard from './Pages/Dashboard.jsx'
+import Home from './Pages/Home.jsx'
 
 
 const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<App />} >
-      <Route path='/dashboard' element={<Dashboard />}/>
-    </Route>
-  ));
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        {
+          index: true,
+          element: <Home />
+        },
+        {
+          path: '/dashboard',
+          element: <Dashboard />
+        }
+      ]
+    }
+  ]
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
+      <ChakraProvider>
     <RouterProvider router={router}/>
-  </StrictMode>,
+      </ChakraProvider>
+  </StrictMode>
+
+
 )
