@@ -4,7 +4,11 @@ import Plot from "react-plotly.js"
 const BarChart = ({ xData, yData }) => {
     return (
                <Plot
-            data={[{ type: "bar", x: xData, y: yData }]}
+            data={[{ 
+              type: "bar",
+              x: xData, 
+              y: yData,
+              marker: {color: '#03A9C9'}, }]}
             layout={{
               title:{text: "A Project Manager's Task Load"},
               xaxis: {
