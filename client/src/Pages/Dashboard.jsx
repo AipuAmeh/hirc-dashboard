@@ -23,31 +23,34 @@ const Dashboard = () => {
   }
 
   return (
-    <Box>
-    <Grid
-      h="200px"
-      templateRows="repeat(2, 1fr)"
-      templateColumns="repeat(5, 1fr)"
-      gap={4}
-    >
-      <GridItem rowSpan={2} colSpan={1}>
-        <Box>
-          <Text mt={"3em"} fontSize={"1.5em"}>
-            Side Panel
-          </Text>
-        </Box>
-      </GridItem>
-      <GridItem colSpan={4}>
-        <Box>
-          <Text fontSize={"3em"} mt={"1em"} mb={"1em"}>
-            IntelliScope
-          </Text>
-          <BarChart xData={xArray} yData={yArray} />
-        </Box>
-      </GridItem>
-    </Grid>
-    </Box>
+    <Box px={'2em'}>
+      <Text fontSize={"3em"} mt={"1em"} mb={"1em"} color='brand.deepBurgundy' fontWeight={'500'}>
+        IntelliScope
+      </Text>
+      <Grid
+        templateColumns="repeat(5, 1fr)"
+        gap={4}
+      >
+        <GridItem rowSpan={2} colSpan={2}>
+          <Box h='100%' w='80%' bg='brand.gray'>
+            <Text mt={"3em"} fontSize={"1.5em"}>
+              Side Panel
+            </Text>
+          </Box>
+        </GridItem>
+        <GridItem colSpan={3}>
+          <Box>
+            <BarChart xData={xArray} yData={yArray} />
+          </Box>
+        </GridItem>
+        <GridItem>
+                <Box bg='gray'>
+        <Text>Results Summary</Text>
+      </Box>
+        </GridItem>
+      </Grid>
 
+    </Box>
   );
 };
 
