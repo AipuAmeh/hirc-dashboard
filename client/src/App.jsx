@@ -1,20 +1,21 @@
-// import { useState } from 'react'
-import './App.css'
-import { Outlet } from 'react-router-dom'
-import Header from './Components/Header'
-import Footer from './Components/Footer'
+import { Box } from "@chakra-ui/react";
+import "./App.css";
+import { Outlet } from "react-router-dom";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 function App() {
-
   return (
     <>
-    <main>
-      <Header />
-      <Outlet />
-      <Footer />
-    </main>
+      <Box>
+        <Header />
+        <Box>
+          <Outlet />
+        </Box>
+        <Footer />
+      </Box>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

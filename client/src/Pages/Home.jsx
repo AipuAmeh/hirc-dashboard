@@ -2,8 +2,8 @@ import { Box, Flex, Text, Grid, GridItem, Stack } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <Box>
-      <Text fontSize="3em" mt={"1em"}>
+    <Box px={'2em'} h='100%'>
+      <Text fontSize="3em" mt={"1em"} color='brand.deepBurgundy' fontWeight={'500'}>
         IntelliScope: A Dashboard for Project Managers
       </Text>
       <Flex gap="5em" mt="4em">
@@ -18,9 +18,10 @@ const Home = () => {
           <Stack>
             <Box display="flex" flexDirection="row" gap="1em" mb='2rem'>
               <Box
-                background="gray"
-                width="2.2rem" 
+                background="brand.watermelonGreen"
+                width="2.5rem" 
                 height="2rem" 
+                p={'1.25em'}
               ></Box>
               <Text textAlign={"left"} fontSize={"1.3em"}>
                 Make the process of extracting data easier.
@@ -28,9 +29,10 @@ const Home = () => {
             </Box>
             <Box display="flex" flexDirection="row" gap="1.2em" mb='2rem'>
               <Box
-                background="gray"
-                width="3.6rem" 
+                background="brand.summerPink"
+                width="2.5rem" 
                 height="2rem"
+                p={'1.25em'}
               ></Box>
               <Text textAlign={"left"} fontSize={"1.3em"}>
                 Increase efficiency of viewing projects and summarizing
@@ -39,9 +41,10 @@ const Home = () => {
             </Box>
             <Box display="flex" flexDirection="row" gap="1.1em" mb='2rem'>
               <Box
-                background="gray"
+                background="brand.twinkleBlue"
                 width="2.5rem"
                 height="2rem" 
+                p={'1.25em'}
               ></Box>
               <Text textAlign={"left"} fontSize={"1.3em"}>
                 Provide real-time information for project managers and HIRC
