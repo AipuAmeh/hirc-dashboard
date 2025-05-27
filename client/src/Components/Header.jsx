@@ -5,7 +5,7 @@ const Header = () => {
     return (
       <Flex gap="4" justify="space-between" p={5} shadow={"md"}>
       <Box height="10" width="40" marginEnd="auto">
-        <Image src='public/logo.png' alt='dashboard-logo' height='50px'></Image>
+        <Image src='logo.png' alt='dashboard-logo' height='50px'></Image>
       </Box>
       <Link href="/">
             <Box height="10" width="40"  >Home</Box>
