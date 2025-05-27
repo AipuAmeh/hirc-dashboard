@@ -1,14 +1,12 @@
 import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import React from "react";
-import Plot from "react-plotly.js";
 import BarChart from "../Components/BarChart";
-import Footer from "../Components/Footer";
+import UserInput from "../Components/UserDropDown";
+import UserDropDown from "../Components/UserDropDown";
 
 const Dashboard = () => {
   const dashboardData = useLoaderData();
-  console.log(dashboardData);
   const [data, setData] = useState(dashboardData);
 
   // barchart data for pm name and category
@@ -23,19 +21,30 @@ const Dashboard = () => {
   }
 
   return (
-    <Box px={'2em'}>
-      <Text fontSize={"3em"} mt={"1em"} mb={"1em"} color='brand.deepBurgundy' fontWeight={'500'}>
+    <Box px={"2em"}>
+      <Text
+        fontSize={"3em"}
+        mt={"1em"}
+        mb={"1em"}
+        color="brand.deepBurgundy"
+        fontWeight={"500"}
+      >
         IntelliScope
       </Text>
-      <Grid
-        templateColumns="repeat(5, 1fr)"
-        gap={4}
-      >
+      <Grid templateColumns="repeat(5, 1fr)" gap={4}>
         <GridItem rowSpan={2} colSpan={2}>
-          <Box h='100%' w='80%' bg='brand.gray'>
+          <Box
+            h="100%"
+            w="80%"
+            bg="brand.pearl"
+            // display={"flex"}
+            // justifyContent={"flex-start"}
+            // flexDirection={'column'}
+          >
             <Text mt={"3em"} fontSize={"1.5em"}>
               Side Panel
             </Text>
+            <UserDropDown />
           </Box>
         </GridItem>
         <GridItem colSpan={3}>
@@ -44,12 +53,11 @@ const Dashboard = () => {
           </Box>
         </GridItem>
         <GridItem>
-                <Box bg='gray'>
-        <Text>Results Summary</Text>
-      </Box>
+          <Box bg="brand.pearl" w="100%">
+            <Text>Results Summary</Text>
+          </Box>
         </GridItem>
       </Grid>
-
     </Box>
   );
 };
