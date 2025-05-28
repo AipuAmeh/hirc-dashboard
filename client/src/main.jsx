@@ -20,19 +20,19 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
-        loader: async () => {
-          const url = "http://127.0.0.1:5000/api/data";
-          try {
-            const response = await fetch(url);
-            if (!response.ok) {
-              throw new Error(`Response not okay: ${response.status}`);
-            }
-            const responseData = await response.json();
-            return responseData
-          } catch (error) {
-            console.log(error);
-          }
-        },
+        // loader: async () => {
+        //   const url = "http://127.0.0.1:5000/api/data";
+        //   try {
+        //     const response = await fetch(url);
+        //     if (!response.ok) {
+        //       throw new Error(`Response not okay: ${response.status}`);
+        //     }
+        //     const responseData = await response.json();
+        //     return responseData
+        //   } catch (error) {
+        //     console.log(error);
+        //   }
+        // },
       },
     ],
   },
