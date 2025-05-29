@@ -8,7 +8,7 @@ views = Blueprint('views', __name__)
 CORS(views, origins=["http://localhost:5173"])
 
 # rename to specify which chart it will go with
-@views.route('/api/data', methods=['GET'])
+@views.route('/api/data', methods=['GET', 'POST'])
 def get_csv_data():
     chart_type = request.args.get('chart_type', 'pm_vs_category')
     data = pd.read_csv('server/data/hirc_pm_report_cleaned.csv')
@@ -41,5 +41,9 @@ def get_csv_data():
     chart_data = sqldf(query, locals())
     # summary = data.describe(include='all')
     return jsonify(chart_data.to_dict(orient='records'))
+
+@views.route('/some-route')
+def fake():
+    pass
 
     

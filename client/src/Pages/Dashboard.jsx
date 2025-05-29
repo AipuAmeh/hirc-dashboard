@@ -1,6 +1,5 @@
 import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
 import axios from "axios";
 import BarChart from "../Components/BarChart";
 import ChartDropDown from "../Components/ChartDropDown";
@@ -50,20 +49,23 @@ const Dashboard = () => {
         IntelliScope
       </Text>
       <Grid templateColumns="repeat(5, 1fr)" gap={4}>
-        <GridItem rowSpan={2} colSpan={2}>
+        <GridItem rowSpan={2} colSpan={1}>
           <Box h="85%" w="80%" bg="brand.pearl">
-            <Text mt={"3em"} fontSize={"1.5em"} p={3}>
+            <Text mt={"3em"} fontSize={"1em"} p={3} align={'left'}>
               Choose a Chart
             </Text>
-            <ChartDropDown chartType={chartType} setChartType={setChartType} />
+            <Box display={'flex'} justifyContent={'flex-start'} pl={3}>
+   <ChartDropDown chartType={chartType} setChartType={setChartType} />
+            </Box>
+         
           </Box>
         </GridItem>
-        <GridItem colSpan={3}>
+        <GridItem colSpan={4}>
           <Box>{chartContent}</Box>
         </GridItem>
-        <GridItem>
-          <Box bg="brand.pearl" w="100%">
-            <Text>Results Summary</Text>
+        <GridItem col="true" colSpan={4}>
+          <Box bg="brand.pearl" w="100%" h='100%' p={3}>
+            <Text >Results Summary</Text>
           </Box>
         </GridItem>
       </Grid>

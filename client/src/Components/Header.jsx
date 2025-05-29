@@ -8,11 +8,11 @@ const Header = () => {
         <Image src='logo.png' alt='dashboard-logo' height='50px'></Image>
       </Box>
       <Link href="/">
-            <Box height="10" width="40"  >Home</Box>
+            <Box height="10" width="40" lineHeight={10} >Home</Box>
       </Link>
 
       <Link href='/dashboard'>
-      <Box height="10" width="40">Dashboard</Box> 
+      <Box height="10" width="40" lineHeight={10}>Dashboard</Box> 
       </Link>
     </Flex>
     )
